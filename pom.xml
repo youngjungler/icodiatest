@@ -46,6 +46,13 @@
             <scope>compile</scope>
         </dependency>
 
+
+        <dependency>
+            <groupId>org.apache.dubbo.extensions</groupId>
+            <artifactId>dubbo-wasm-api</artifactId>
+            <version>3.3.0</version>
+        </dependency>
+
     </dependencies>
     <build>
         <plugins>
