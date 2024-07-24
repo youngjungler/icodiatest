@@ -146,6 +146,13 @@ public class HomePage extends BaseLib {
         return this;
     }
 
+    {
+        @Step("kategori alanında bulunan pantolon butonuna basılır")
+        public HomePage kategoriAlaniPantolonSec(){
+        driver.findElement(By.cssSelector("body > div.master-wrapper-page > div.ac-m-h-w > div.collection-menu-w > div > div > div.ac-m-h__collection-menu-c-b > ul.left-menu.js-collection-left-menu.-visible > li:nth-child(4) > a")).click();
+
+        return this;
+    }
 
 
 
