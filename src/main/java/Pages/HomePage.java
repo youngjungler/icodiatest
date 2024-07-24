@@ -139,6 +139,15 @@ public class HomePage extends BaseLib {
 
 
 
+    @Step("Sol üst köşedeki katogori alanına basılır")
+    public HomePage katagoriAlaninaBas(){
+        driver.findElement(By.cssSelector("body > div.master-wrapper-page > div.ac-m-h-w > header > div > div:nth-child(1) > button")).click();
+
+        return this;
+    }
+
+
+
 
 
 

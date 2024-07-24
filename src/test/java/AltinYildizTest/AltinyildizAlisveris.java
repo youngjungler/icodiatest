@@ -28,18 +28,16 @@ public class AltinyildizAlisveris extends BaseTest {
 
     }
 
-    @Test(description = "TC0002 Yasin Çalışma Test")
+    @Test(description = "TC0002 Yasin Çalışma Test - ")
     public void TC0002() {
         HomePage homePage = new HomePage(driver);
         AccountPage accountPage = new AccountPage(driver);
 
         homePage
-                
-                .searchButonunaBas("")
-                .passwordDoldur("Test123456")
-                .login()
-                .errorKontrolu("Please enter a username and password.");
+                .katagoriAlaninaBas();
 
 
+
+}
 }
 
