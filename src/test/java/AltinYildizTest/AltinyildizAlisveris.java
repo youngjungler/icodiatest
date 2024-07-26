@@ -36,9 +36,9 @@ public class AltinyildizAlisveris extends BaseTest {
         homePage
                 .kategoriAlaninaBas()
                 .kategoriAlaniPantolonSec()
-                .pantolonAlanindaIkinciUrunsec();
-
-
+                .pantolonAlanindaIkinciUrunsec()
+                .secilenUrundeRenkTercihiYapilir()
+                .secilenUrundeBedenTercihiYapilir();
 
 
 }

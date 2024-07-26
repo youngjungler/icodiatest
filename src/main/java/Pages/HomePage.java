@@ -163,16 +163,25 @@ public class HomePage extends BaseLib {
     }
 
 
+    @Step("seçilen üründe renk tercihi yapılır")
+    public HomePage secilenUrundeRenkTercihiYapilir(){
+        driver.findElement(By.cssSelector("body > div.master-wrapper-page > div.ac-p-body > div.center-1 > div.product-p-w > div.product-p-i-w > div > div.product-p-i__colors-w > div > ul > li:nth-child(1) > a > span")).click();
+
+        return this;
+    }
+
+    @Step("seçilen üründe beden tercihi yapılır")
+    public HomePage secilenUrundeBedenTercihiYapilir(){
+        driver.findElement(By.cssSelector("body > div.master-wrapper-page > div.ac-p-body > div.center-1 > div.product-p-w > div.product-p-i-w > div > div.product-p-i__sizes-w > div.select-w > ac-select > div > ac-select-option:nth-child(2)")).click();
+
+        return this;
 
 
 
 
 
 
-
-
-
-    @Step("Login buttonuna tıklanır")
+    /*@Step("Login buttonuna tıklanır")
     public HomePage login(){
         driver.findElement(By.cssSelector("#loginPanel > form > div:nth-child(5) > input")).click();
         return this;
@@ -184,7 +193,7 @@ public class HomePage extends BaseLib {
         Assert.assertEquals(text, value);
         Allure.addAttachment(text + ": erorr mesajı geldiği görüntülenmiştir.","");
         attachScreenshot(driver);
-        return this;
+        return this;*/
     }
 
 }
