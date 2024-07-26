@@ -147,7 +147,7 @@ public class HomePage extends BaseLib {
     }
 
 
-        @Step("kategori alanında bulunan pantolon butonuna basılır")
+        @Step("Kategori alanında bulunan pantolon butonuna basılır")
         public HomePage kategoriAlaniPantolonSec(){
         driver.findElement(By.cssSelector("body > div.master-wrapper-page > div.ac-m-h-w > div.collection-menu-w > div > div > div.ac-m-h__collection-menu-c-b > ul.left-menu.js-collection-left-menu.-visible > li:nth-child(4) > a")).click();
 
@@ -155,7 +155,7 @@ public class HomePage extends BaseLib {
     }
 
 
-    @Step("pantolon alanında çıkan 2. ürüne basılır")
+    @Step("Pantolon alanında çıkan 2. ürüne basılır")
     public HomePage pantolonAlanindaIkinciUrunsec(){
         driver.findElement(By.cssSelector("body > div.master-wrapper-page > div.ac-p-body > div.list-p-w > div > div.list-b-content.js-list-content > ul > li:nth-child(2) > ac-product-card > div.ac-pc__img-w > a")).click();
 
@@ -163,15 +163,18 @@ public class HomePage extends BaseLib {
     }
 
 
-    @Step("seçilen üründe renk tercihi yapılır")
+    @Step("Seçilen üründe renk tercihi yapılır")
     public HomePage secilenUrundeRenkTercihiYapilir(){
         driver.findElement(By.cssSelector("body > div.master-wrapper-page > div.ac-p-body > div.center-1 > div.product-p-w > div.product-p-i-w > div > div.product-p-i__colors-w > div > ul > li:nth-child(1) > a > span")).click();
 
         return this;
     }
 
-    @Step("seçilen üründe beden tercihi yapılır")
-    public HomePage secilenUrundeBedenTercihiYapilir(){
+
+
+    @Step("Açılan ürün detay ekranından 46 beden seçilir")
+    public HomePage urunDetayKirkaltiBedenSec (){
+        driver.findElement(By.cssSelector("body > div.master-wrapper-page > div.ac-p-body > div.center-1 > div.product-p-w > div.product-p-i-w > div > div.product-p-i__sizes-w > div.select-w > ac-select")).click();
         driver.findElement(By.cssSelector("body > div.master-wrapper-page > div.ac-p-body > div.center-1 > div.product-p-w > div.product-p-i-w > div > div.product-p-i__sizes-w > div.select-w > ac-select > div > ac-select-option:nth-child(2)")).click();
 
         return this;
@@ -194,6 +197,10 @@ public class HomePage extends BaseLib {
         Allure.addAttachment(text + ": erorr mesajı geldiği görüntülenmiştir.","");
         attachScreenshot(driver);
         return this;*/
+
+
+
+
     }
 
 }
