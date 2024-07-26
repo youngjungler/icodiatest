@@ -140,10 +140,10 @@ public class HomePage extends BaseLib {
 
 
     @Step("Sol üst köşedeki katogori alanına basılır")
-    public HomePage katagoriAlaninaBas(){
-        driver.findElement(By.cssSelector("body > div.master-wrapper-page > div.ac-m-h-w > header > div > div:nth-child(1) > button")).click();
+        public HomePage kategoriAlaninaBas(){
+            driver.findElement(By.cssSelector("body > div.master-wrapper-page > div.ac-m-h-w > header > div > div:nth-child(1) > button")).click();
 
-        return this;
+            return this;
     }
 
 
@@ -155,7 +155,12 @@ public class HomePage extends BaseLib {
     }
 
 
+    @Step("pantolon alanında çıkan 2. ürüne basılır")
+    public HomePage pantolonAlanindaIkinciUrunsec(){
+        driver.findElement(By.cssSelector("body > div.master-wrapper-page > div.ac-p-body > div.list-p-w > div > div.list-b-content.js-list-content > ul > li:nth-child(2) > ac-product-card > div.ac-pc__img-w > a")).click();
 
+        return this;
+    }
 
 
 

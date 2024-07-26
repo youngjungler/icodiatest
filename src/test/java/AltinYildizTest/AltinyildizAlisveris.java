@@ -34,7 +34,9 @@ public class AltinyildizAlisveris extends BaseTest {
         AccountPage accountPage = new AccountPage(driver);
 
         homePage
-                .katagoriAlaninaBas();
+                .kategoriAlaninaBas()
+                .kategoriAlaniPantolonSec()
+                .pantolonAlanindaIkinciUrunsec();
 
 
 
