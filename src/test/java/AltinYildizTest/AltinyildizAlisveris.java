@@ -41,7 +41,7 @@ public class AltinyildizAlisveris extends BaseTest {
                 .pantolonAlanindaIkinciUrunsec()
                 .secilenUrundeRenkTercihiYapilir()
                 .urunDetayKirkaltiBedenSec()
-                .urunDetaySepeteEkle();
+                .urunDetaySepeteEkle()
 
 
 }
