@@ -15,6 +15,7 @@ public class AltinyildizAlisveris extends BaseTest {
         AccountPage accountPage = new AccountPage(driver);
 
         homePage
+                .cerezleriKabulet()
                 .aramaButonunaBas()
                 .aramabarDoldur("Gömlek")
                 .urunuAra()
@@ -34,6 +35,7 @@ public class AltinyildizAlisveris extends BaseTest {
         AccountPage accountPage = new AccountPage(driver);
 
         homePage
+                .cerezleriKabulet()
                 .kategoriAlaninaBas()
                 .kategoriAlaniPantolonSec()
                 .pantolonAlanindaIkinciUrunsec()
