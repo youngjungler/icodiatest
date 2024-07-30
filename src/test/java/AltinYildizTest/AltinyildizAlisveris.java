@@ -40,9 +40,9 @@ public class AltinyildizAlisveris extends BaseTest {
                 .kategoriAlaniPantolonSec()
                 .pantolonAlanindaIkinciUrunsec()
                 .secilenUrundeRenkTercihiYapilir()
-                .urunDetayKirkaltiBedenSec()
-                .urunDetaySepeteEkle();
-
+                .urunDetayElliSekizBedenSec()
+                .urunDetaySepeteEkle()
+                .urunDetaySepeteGit();
 
 }
 }
