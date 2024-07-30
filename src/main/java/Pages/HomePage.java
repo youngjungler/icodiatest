@@ -98,7 +98,7 @@ public class HomePage extends BaseLib {
     public HomePage urunDetaySepeteGit() {
 
 
-        driver.findElement(By.cssSelector("body > div.master-wrapper-page > div.ac-m-h-w > header > div > ul > li:nth-child(4) > a > span.relative > ac-icon > svg")).click();
+        driver.findElement(By.cssSelector("body > ac-modal > div.modal-box > div.buttons > ac-button:nth-child(2)")).click();
 
 
         return this;
