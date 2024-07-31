@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 public class AltinyildizAlisveris extends BaseTest {
 
     @Test(description = "TC0001 Anasayfa Search Butonu Kontrolü")
-    public void TC0001() {
+    public void TC0001() throws InterruptedException {
 
         HomePage homePage = new HomePage(driver);
         AccountPage accountPage = new AccountPage(driver);
@@ -30,7 +30,7 @@ public class AltinyildizAlisveris extends BaseTest {
     }
 
     @Test(description = "TC0002 Yasin Çalışma Test - ")
-    public void TC0002() {
+    public void TC0002() throws InterruptedException {
         HomePage homePage = new HomePage(driver);
         AccountPage accountPage = new AccountPage(driver);
 
@@ -42,6 +42,9 @@ public class AltinyildizAlisveris extends BaseTest {
                 .secilenUrundeRenkTercihiYapilir()
                 .urunDetayKirkaltiBedenSec()
                 .urunDetaySepeteEkle()
+                .urunDetaySepeteGit();
+
+
 
 
 }

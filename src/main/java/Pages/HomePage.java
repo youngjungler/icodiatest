@@ -10,6 +10,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
+import static java.lang.Thread.*;
+
 public class HomePage extends BaseLib {
 
     private WebDriver driver;
@@ -95,10 +97,17 @@ public class HomePage extends BaseLib {
     }
 
     @Step("Ürün detay sayfasında sepete git butonu seçilir")
-    public HomePage urunDetaySepeteGit() {
+    public HomePage urunDetaySepeteGit() throws InterruptedException {
+       sleep(5000);
+        WebElement frame = driver.findElement(By.cssSelector("iframe[title='Criteo DIS iframe']"));
+        driver.switchTo().frame(frame);
+        WebElement element = driver.findElement(By.cssSelector("[url='/sepetim']"));
+        JavascriptExecutor executor = (JavascriptExecutor)driver;
+        executor.executeScript("arguments[0].click();", element);
 
 
-        driver.findElement(By.cssSelector("body > div.master-wrapper-page > div.ac-m-h-w > header > div > ul > li:nth-child(4) > a > span.relative > ac-icon > svg")).click();
+        driver.findElement(By.cssSelector("[url='/sepetim']")).click();
+        
 
 
         return this;
@@ -150,7 +159,7 @@ public class HomePage extends BaseLib {
 
 
     @Step("Pantolon alanında çıkan 2. ürüne basılır")
-    public HomePage pantolonAlanindaIkinciUrunsec() {
+    public HomePage pantolonAlanindaIkinciUrunsec()  {
         driver.findElement(By.cssSelector("body > div.master-wrapper-page > div.ac-p-body > div.list-p-w > div > div.list-b-content.js-list-content > ul > li:nth-child(2) > ac-product-card > div.ac-pc__img-w > a")).click();
 
         return this;
