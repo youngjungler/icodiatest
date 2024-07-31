@@ -106,8 +106,10 @@ public class HomePage extends BaseLib {
         executor.executeScript("arguments[0].click();", element);
 
 
+
         driver.findElement(By.cssSelector("[url='/sepetim']")).click();
         
+
 
 
         return this;
@@ -174,10 +176,10 @@ public class HomePage extends BaseLib {
     }
 
 
-    @Step("Açılan ürün detay ekranından 46 beden seçilir")
-    public HomePage urunDetayKirkaltiBedenSec() {
+    @Step("Açılan ürün detay ekranından 58 beden seçilir")
+    public HomePage urunDetayElliSekizBedenSec() {
         driver.findElement(By.cssSelector("body > div.master-wrapper-page > div.ac-p-body > div.center-1 > div.product-p-w > div.product-p-i-w > div > div.product-p-i__sizes-w > div.select-w > ac-select")).click();
-        driver.findElement(By.cssSelector("body > div.master-wrapper-page > div.ac-p-body > div.center-1 > div.product-p-w > div.product-p-i-w > div > div.product-p-i__sizes-w > div.select-w > ac-select > div > ac-select-option:nth-child(2)")).click();
+        driver.findElement(By.cssSelector("body > div.master-wrapper-page > div.ac-p-body > div.center-1 > div.product-p-w > div.product-p-i-w > div > div.product-p-i__sizes-w > div.select-w > ac-select > div > ac-select-option:nth-child(8)")).click();
 
         return this;
     }
