@@ -252,8 +252,6 @@ public class HomePage extends BaseLib {
         driver.findElement(By.cssSelector("#overlay-root > div > div.modal-box > div > ac-form > div:nth-child(5) > ac-validation > ac-textarea > textarea")).sendKeys("dashdqweoqwdqwıhqwohqdwpoqhdqwd"); // adresi tam yazmak
         driver.findElement(By.cssSelector("#overlay-root > div > div.modal-box > div > ac-form")).click();// kaydet butonuna basmak
 
-
-
         return this;
 
     }
